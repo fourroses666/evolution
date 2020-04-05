@@ -554,5 +554,67 @@ body,
   border: #414449 1px solid!important;
 }
 
+/* RESTYLING EXTRAS */
 
+/* Deprecated needs red background */
+.item-AjaxSearch .catalog_thumb,
+.item-Ditto .catalog_thumb,
+.item-Wayfinder .catalog_thumb,
+.item-eForm .catalog_thumb,
+.item-TinyMCE3 .catalog_thumb,
+.item-EvoRE3 .catalog_thumb,
+.item-Shopkeeper .catalog_thumb{background:#d94444!important;}
 
+.catalog_thumb img{display:none;}
+.catalog_thumb{height:120px; background:#454f59; position:relative;}
+.catalog_thumb:before{font-family:'Font Awesome 5 Free'; content:'\f058'; color:#fff; z-index:1; position:absolute; left:0; right:0; top:30px; line-height:50px; font-size:50px; text-align:center;}
+
+/* Add FontAwesome icons */
+.type-chunk .catalog_thumb:before{content:'\f118';}
+.type-snippets .catalog_thumb:before{content:'\f118';}
+.type-modules .catalog_thumb:before{content:'\f118';}
+.type-plugins .catalog_thumb:before{content:'\f118';}
+.type-package .catalog_thumb:before{content:'\f118';}
+.type-core .catalog_thumb:before{content:'\f118';}
+
+/* Deprecated */
+.item-eForm .catalog_thumb:before{content:'\f057';}
+.item-eForm .catalog_thumb:after{content:'Deprecated! Use FormLister';}
+.item-AjaxSearch .catalog_thumb:before{content:'\f057';}
+.item-AjaxSearch .catalog_thumb:after{content:'Deprecated! Use evoSearch';}
+.item-Ditto .catalog_thumb:before{content:'\f057';}
+.item-Ditto .catalog_thumb:after{content:'Deprecated! Use DocLister';}
+.item-Wayfinder .catalog_thumb:before{content:'\f057';}
+.item-Wayfinder .catalog_thumb:after{content:'Deprecated! Use DLMenu';}
+.item-TinyMCE3 .catalog_thumb:before{content:'\f057';}
+.item-TinyMCE3 .catalog_thumb:after{content:'Deprecated! Use TinyMCE4';}
+.item-EvoRE3 .catalog_thumb:before{content:'\f057';}
+.item-EvoRE3 .catalog_thumb:after{content:'Deprecated! Use Default style';}
+.item-Shopkeeper .catalog_thumb:before{content:'\f057';}
+.item-Shopkeeper .catalog_thumb:after{content:'Deprecated! Use Commerce';}
+.item-TSVshop .catalog_thumb:before{content:'\f057';}
+.item-TSVshop .catalog_thumb:after{content:'Deprecated! Use Commerce';}
+
+.item-eForm .catalog_thumb:after,
+.item-AjaxSearch .catalog_thumb:after,
+.item-Ditto .catalog_thumb:after,
+.item-Wayfinder .catalog_thumb:after,
+.item-TinyMCE3 .catalog_thumb:after,
+.item-EvoRE3 .catalog_thumb:after,
+.item-Shopkeeper .catalog_thumb:after,
+.item-TSVshop .catalog_thumb:after{display:block; color:#fff; margin-top:88px; font-size:12px; line-height:12px; padding:0 10px;}
+
+.item-anythingRating .catalog_thumb:before{content:'\f005';}
+.item-MemberCheck .catalog_thumb:before{content:'\f007';}	
+.item-DocLister .catalog_thumb:before{content:'\f022';}
+.item-EasyPoll .catalog_thumb:before{content:'\f086';}
+.item-bLang .catalog_thumb:before{content:'\f024';}
+.item-evoBabel .catalog_thumb:before{content:'\f024';}
+.item-MultiCategories .catalog_thumb:before{content:'\f022';}
+
+/* Give color to types of Extras */
+.type-snippets .catalog_thumb{background:#69ace0;}
+.type-modules .catalog_thumb{background:#f18048;}
+.type-plugins .catalog_thumb{background:#599f46;}
+.type-package .catalog_thumb{background:#a1c855;}
+.type-core .catalog_thumb{background:#76b94f;}
